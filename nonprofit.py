@@ -4,13 +4,17 @@ def displayIntro():
 
 
 def displayNonProfits():
+    print(" 1. World Central Kitchen")
+    print(" 2. Crisis Text Line")
+    print("3. Heart to Heart International")
+    wck = 0
+    ctl = 0
+    hth = 0
   #print all the non-profits to the screen numerically. For Example:
 #    1. World Central Kitchen
 #    2. Crisis Text Line
 #    3. Heart to Heart International
-  pass 
-
-
+ 
 def main():
 	displayIntro()
 
