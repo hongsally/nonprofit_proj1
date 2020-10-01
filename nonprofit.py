@@ -2,23 +2,25 @@ def displayIntro():
     print("Welcome. This are a list of non profit you can donate to!")
   #put an Introduction message to the users
 
-
-def displayNonProfits():
-    print(" 1. World Central Kitchen")
-    print(" 2. Crisis Text Line")
+def displaynonprofit():
+    print("1. World Central Kitchen")
+    print("2. Crisis Text Line")
     print("3. Heart to Heart International")
     wck = 0
     ctl = 0
     hth = 0
-  #print all the non-profits to the screen numerically. For Example:
+    #print all the non-profits to the screen numerically. For Example:
 #    1. World Central Kitchen
 #    2. Crisis Text Line
 #    3. Heart to Heart International
+
  
 def main():
-	displayIntro()
+    displayIntro()
+    displaynonprofit()
+    chose = int(input("Which nonprofit would you like to donate to?: "))
 
-	#steps: 
+   #steps: 
 	#1. welcome the user using a unique Intro Message (use a function for this)
 	#2. create a variable for each nonprofit/charity that keeps track of how much total money has been donated
 	#3. display all the non-profits to the user and ask which one they would like to donate to 
