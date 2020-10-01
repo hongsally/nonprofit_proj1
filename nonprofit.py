@@ -6,15 +6,12 @@ def displaynonprofit():
     print("1. World Central Kitchen")
     print("2. Crisis Text Line")
     print("3. Heart to Heart International")
-    wck = 0 
-    ctl = 0 
-    hth = 0 
     #print all the non-profits to the screen numerically. For Example:
 #    1. World Central Kitchen
 #    2. Crisis Text Line
 #    3. Heart to Heart International
 
- 
+
 def main():
     displayIntro()
     displaynonprofit()
@@ -23,12 +20,17 @@ def main():
     hth = 0 
     which = int(input("Which nonprofit would you like to donate to?: "))
     if which == 1:
-        w = int(input("Enter amount you want to donate to: "))
+        amount = int(input("Enter amount you want to donate to: "))
+        wck = wck + amount
     elif which == 2:
-        c = int(input("Enter amount you want to donate to: "))
+        amount = int(input("Enter amount you want to donate to: "))
+        ctl = ctl + amount
     elif which == 3:
-        h = int(input("Enter amount you want to donate to: "))
-
+        amount = int(input("Enter amount you want to donate to: "))
+        hth = hth + amount
+    print(f"World Central Kitchen: {wck}")
+    print(f"Crisis Text Line: {ctl}")
+    print(f"Heart to Heart International: {hth}")
 
    #steps: 
 	#1. welcome the user using a unique Intro Message (use a function for this)
