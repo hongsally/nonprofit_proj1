@@ -11,26 +11,32 @@ def displaynonprofit():
 #    2. Crisis Text Line
 #    3. Heart to Heart International
 
+def total(wck,ctl,hth):
+    print(f"World Central Kitchen: {wck}")
+    print(f"Crisis Text Line: {ctl}")
+    print(f"Heart to Heart International: {hth}")
 
 def main():
     displayIntro()
-    displaynonprofit()
     wck = 0 
     ctl = 0 
     hth = 0 
+    displaynonprofit()
     which = int(input("Which nonprofit would you like to donate to?: "))
     if which == 1:
         amount = int(input("Enter amount you want to donate to: "))
         wck = wck + amount
+        total(wck,ctl,hth)
     elif which == 2:
         amount = int(input("Enter amount you want to donate to: "))
         ctl = ctl + amount
+        total(wck,ctl,hth)
     elif which == 3:
         amount = int(input("Enter amount you want to donate to: "))
         hth = hth + amount
-    print(f"World Central Kitchen: {wck}")
-    print(f"Crisis Text Line: {ctl}")
-    print(f"Heart to Heart International: {hth}")
+        total(wck,ctl,hth)
+    again = input("Thank you for the donation! Would you like to donate again?: ")
+    
     
 
    #steps: 
